@@ -1,0 +1,471 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'OSwald', sans-serif;
+    background-color: #e0e0e0;
+}
+
+/*PONER EL EFECTO SOMBRA*/
+#barraBotones{
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+    background-color: rgb(44, 44, 44);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #888888; /* Propiedad de sombra */
+}
+
+#contenedorBotones{
+    display: flex;
+    justify-content: center;
+    margin: 1.5vh 10vw;
+}
+
+@media (width < 1500px){
+    #contenedorBotones{
+        display: flex;
+        justify-content: center;
+        margin: 1.5vh -2vw;
+    }
+}
+
+@media (width < 450px){
+    #barraBotones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20em;
+        background-color: rgb(44, 44, 44);
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px #888888; /* Propiedad de sombra */
+    }
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 61, 61);
+    font-size: 30px;
+    width: 200px;
+}
+
+#botones:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*SOBRE MI*/
+
+#sobreMi{
+    display: grid;
+    grid-template-columns:1fr  1fr;
+    grid-template-rows: 60vh ; 
+}
+
+@media (width < 800px){
+
+    #sobreMi{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+
+#sobreMi #columnaUno{
+    display: flex;
+    justify-content: center;
+}
+
+#miFoto:hover{
+    color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgb(231, 0, 0);
+  transition: all 0.2s ease;
+}
+
+
+@media (width > 1000px){
+    #miFoto{
+        border-radius: 50%;
+        margin-top: 15vh;
+        margin-left: 20vw;
+        border: 2px solid red;
+    }
+
+}
+
+@media (width < 1000px){
+    #miFoto{
+        border-radius: 50%;
+        margin-top: 15vh;
+        margin-left: 2vw;
+        padding-right: 0vw;
+        border: 2px solid red;
+    }
+}
+
+/*iPAd width:1024*/
+@media (width: 1024px){
+    #sobreMi{
+        margin-bottom: 25vh;
+    }
+}
+
+#sobreMi #columnaDos{
+    box-sizing: border-box;
+}
+
+#sobreMi #columnaDos .contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 5vw;
+}
+
+@media (width < 1200px){
+    #sobreMi #columnaDos .contenido{
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 1vw;
+        margin-right: 10vw;
+        margin-left: 5vw;
+    }
+}
+
+
+
+.contenido h3 {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: underline red;
+}
+
+
+
+
+
+
+/*HABILIDADES*/
+
+h1{
+    text-align: center;
+}
+#habilidadesContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+}
+
+
+#habilidadesContainer h3 {
+    font-size: 30px;
+}
+
+#diseño{
+    margin: 0vh 3vw;
+    width: 300px;
+}
+
+#codigo{
+    margin: 0vh 3vw;
+    width: 300px;
+}
+
+.habilidades{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.habilidades > p{
+    background-color:  rgb(255, 113, 113);
+    border-radius: 10%;
+    padding: 6px;
+    margin: 0px 1vw;
+}
+
+.habilidades > p:hover{
+    background-color:  rgb(0, 0, 0);
+    color: rgb(255, 90, 90);
+}
+
+
+
+
+
+
+/*CONTACTO*/
+
+#cuerpoContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5vh;
+}
+
+#cuerpoContacto h3{
+    font-size: 27px;
+}
+
+#redesSociales{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#redesSociales div {
+    margin: 1vw 2vw;
+}
+
+
+@media (width > 800px){
+    #redesSociales div {
+        margin: 1vw 1vw;
+    }
+}
+
+
+
+
+
+/*PROYECTOS*/
+
+#proyectoContainer{
+    width: 90%;
+    margin-top: 8vh;
+}
+.proyectos{
+    display: flex;
+    justify-content:space-around;
+    margin: 5vh 1vw;
+}
+
+.containerFoto{
+    margin-left: 16vw;
+}
+
+.foto{
+    border-radius: 3%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+.foto:hover{
+    color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgb(231, 0, 0);
+  transition: all 0.2s ease;
+}
+
+
+@media (width < 770px){
+    #proyectoContainer{
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: 8vh;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .explicacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 200px;
+    }
+
+}
+
+@media (width < 750px){
+    #proyectoContainer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing:border-box ;
+        margin-top: 8vh;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .explicacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 25.5vw;
+        
+    }
+    .containerFoto{
+        margin: auto;
+    }
+
+}
+
+
+
+
+/*PARA MOVIL de 414px de width*/
+
+@media (width < 415px){
+    #proyectoContainer{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing:border-box ;
+        margin-top: 8vh;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .explicacion{
+        display: flex;
+        text-align: center;
+        padding-left: 25.5vw;
+    }
+    .containerFoto{
+        margin: auto;
+        margin-left: 6vw;
+    }
+    .containerFoto .foto{
+        width: 300px;
+        height: 170px;
+    }
+
+}
+
+
+
+/*PARA MOVIL de 376px de width*/
+
+@media (width < 376px){
+    #proyectoContainer{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing:border-box ;
+        margin-top: 8vh;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .explicacion{
+        display: flex;
+        text-align: center;
+        padding-left: 25.5vw;
+    }
+    .containerFoto{
+        margin: auto;
+        margin-left: 2vw;
+    }
+    .containerFoto .foto{
+        width: 300px;
+        height: 170px;
+    }
+
+}
+
+.explicacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    margin-left: 2vw;
+    
+}
+
+.explicacion h3{
+    text-decoration: underline red 2px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer{
+    background-color: rgb(163, 163, 163);
+    margin-top: 5em;
+    border-top: 2px rgb(0, 0, 0) solid;
+}
+
+.footer h3{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 24px;
+}
+
+.footer #cuerpoContacto #redesSociales .correoTelefono{
+    margin: 15px 2vw;
+}
+
+.footer #cuerpoContacto{
+    margin-top: 0px;
+}
+
+.footer #cuerpoContacto #redesSociales{
+    margin-bottom: 1.6vh;
+}
+
+@media (width > 800px){
+    .footer #cuerpoContacto #redesSociales .correoTelefono{
+        margin: 1em 1vw;
+    }
+
+    .footer #cuerpoContacto #redesSociales .correoTelefono a img{
+        margin-right: 0.8vw;
+        margin-left: 1vw;
+    }
+}
+
+@media (width < 550px){
+    .footer #cuerpoContacto #redesSociales .correoTelefono{
+        margin: 14px 2vw;
+    }
+
+    .footer #cuerpoContacto #redesSociales .correoTelefono a img{
+        margin-left: 1.5vw;
+    }
+}
+
+@media (width > 1000px){
+    .footer #cuerpoContacto #redesSociales .correoTelefono{
+        margin: 1.18em 0.8vw;
+    }
+
+    .footer #cuerpoContacto #redesSociales .correoTelefono a img{
+        margin-right: 0.8vw;
+        margin-left: 0.4vw;
+    }
+}
+
+@media (width > 1500px){
+    .footer #cuerpoContacto #redesSociales .correoTelefono{
+        margin: 1.5em 0.8vw;
+    }
+
+    .footer #cuerpoContacto #redesSociales .correoTelefono a img{
+        margin-right: 0.8vw;
+        margin-left: 0.4vw;
+    }
+}
