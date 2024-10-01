@@ -84,6 +84,16 @@ header.abajo ul li a:hover {
     flex-direction: column;
     margin: auto;
     width: 70%;
+    text-align: left;
+}
+
+.container-nombre-puesto .izq {
+    text-align: left;
+    font-weight: 300;
+}
+
+hr {
+    margin: 3px 0 1px 0;
 }
 
 .nombre {
@@ -94,7 +104,7 @@ header.abajo ul li a:hover {
 .puesto {
     color: gray;
     font-size: 1.5rem;
-    margin: 1em;
+    margin-top: 1em;
 }
 
 
