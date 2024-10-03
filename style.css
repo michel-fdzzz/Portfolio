@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
@@ -87,6 +88,10 @@ header.abajo ul li a:hover {
     text-align: left;
 }
 
+.lighter {
+    font-weight: 300;
+    color: rgb(112, 112, 112);
+}
 
 hr {
     margin: 3px 0 1px 0;
@@ -107,4 +112,83 @@ hr {
 h2 {
     font-size: 2.5rem;
     text-align: center;
+}
+
+.title {
+    margin: 1em;
+}
+
+.proyectos-container {
+    height: 100vh;
+    display: flex;
+}
+
+.proyecto-container-izq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.proyecto-container-der {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(233, 233, 233, 0.7);
+    width: 50%;
+    height: 100%;
+}
+
+.proyecto {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    width: 70%;
+    /*height: 100%;*/
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.proyecto:hover {
+    height: -1%;
+}
+
+.numero-proyecto {
+    margin-bottom: 0.5em;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgb(223, 223, 223);
+}
+
+.nombre-proyecto {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.informacion-proyecto {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    color: rgb(223, 223, 223);
+    height: 0px;
+}
+
+.proyecto:hover .informacion-proyecto {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+}
+
+.link {
+    text-align: right;
+}
+
+.black {
+    color: #000000;
 }
