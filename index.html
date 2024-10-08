@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -13,7 +15,7 @@
         <a href="#" class="logo">Portfolio</a>
         <nav>
             <ul>
-                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -24,18 +26,19 @@
             <p class="lighter">Michel Fernández</p>
             <hr>
             <p class="lighter">Desarrollador web junior</p>
-            <h1 class="nombre">HOLA SOY UN CREATIVO DESARROLLADOR WEB</h1>
+            <h1 class="nombre">HOLA! </h1>
             <p class="puesto">
-                Soy un desarrollador full stack junior proactivo, extrovertido, con ganas
+                Soy Michel Fernández, desarrollador web junior además de proactivo, extrovertido, con ganas
                 de trabajar, ya sea de manera individual o en equipo, y siempre con ganas de aprender y mejorar.
-                Actualmente me encuentro realizando un curso de Angular y Spring Boot.
+                <br>Actualmente me encuentro realizando un curso de Angular y Spring Boot aunque este octubre comenzaré
+                un curso de IA.
             </p>
         </div>
     </section>
 
     <section class="proyectos">
         <h2 class="title">Proyectos</h2>
-        <div class="proyectos-container" id="proyectos">
+        <div class="proyectos-container animacion" id="proyectos">
             <div class="proyecto-container-izq">
                 <div class="proyecto">
                     <h2 class="numero-proyecto">01</h2>
@@ -79,9 +82,58 @@
 
     </section>
 
-    <section class="sobre-mi">
+    <section id="sobre-mi" class="animacion">
+        <h2 class="title">Sobre mi</h2>
+        <div class="formacion-container">
+            <h3>Formación</h3>
+            <p> Terminé mis estudios de grado superior en Desarrollo de Aplicaciones Web en junio. Durante mis prácticas
+                en RentDays S.L., participé en el desarrollo de su página web junto con un compañero. Esta experiencia
+                me permitió afianzar mis conocimientos tanto en el frontend como en el backend, fundamentales para un
+                rol de desarrollador full stack. Además, trabajar en equipo me ayudó a compatibilizar tareas y a
+                integrar los diferentes aspectos del proyecto de manera eficiente.
+            </p>
+        </div>
 
+        <div class="experiencia-container">
+            <h3>Experiencia</h3>
+            <h4>Desarrollador full stack en Restdays SL</h4>
+            <p>Desarrollo de una web para la empresa, tanto en el backend como en el forntend.
+
+                Respecto al frontend, diseñé la interfaz responsive y añadí funcionalidades interactivas con HTML, CSS,
+                JavaScript y jQuery.
+
+                En el backend, usé PHP y MySQL para gestionar la lógica del servidor y la base de datos, aportando
+                seguridad y un buen funcionamiento de la web. Ambas partes fueron integradas y comprobadas, garantizando
+                su funcionamiento.
+            </p>
+        </div>
+
+        <div class="educacion-container">
+            <h3>Educación</h3>
+            <p>Cursando el grado de Ingeniería en Sistemas de Información en la Universidad de Granada.</p>
+        </div>
+
+        <div class="idiomas-container">
+            <h3>Idiomas</h3>
+            <ul>
+                <li>Inglés</li>
+                <li>Español</li>
+            </ul>
+        </div>
+
+        <div class="competencias-digitales">
+            <h3>Competencias digitales</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
     </section>
+
 
     <script src="script.js"></script>
 </body>

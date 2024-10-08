@@ -72,6 +72,8 @@ header ul li a {
     align-items: center;
     height: 100vh;
     text-align: center;
+
+
 }
 
 header.abajo .logo,
@@ -125,13 +127,13 @@ h2 {
 .proyectos-container {
     height: 100vh;
     display: flex;
+
 }
 
 .proyecto-container-izq {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(66, 66, 66) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 70%, rgb(66, 66, 66) 85%, rgba(255, 255, 255, 1) 100%);
     width: 50%;
     height: 100%;
     opacity: 0.8;
@@ -140,25 +142,28 @@ h2 {
 .proyecto-container-der {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to top, rgba(153, 153, 153, 0.7) 0%, rgba(233, 233, 233, 0.9) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(245, 245, 245) 15%, rgb(240, 240, 240) 30%, rgba(233, 233, 233, 0.9) 50%, rgba(240, 240, 240, 240) 70%, rgb(245, 245, 245) 85%, rgba(255, 255, 255, 1) 100%);
     width: 50%;
     height: 100%;
+    opacity: 0.8;
 }
+
 
 .proyecto {
     position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: center;
     color: white;
     width: 70%;
-    /*height: 100%;*/
+    height: 100%;
     flex-wrap: wrap;
     margin: auto;
 }
 
 .proyecto:hover {
-    height: -1%;
+    height: -1px;
 }
 
 .numero-proyecto {
@@ -182,10 +187,10 @@ h2 {
     height: 0px;
 }
 
-.proyecto:hover .informacion-proyecto {
+.proyecto:hover>.informacion-proyecto {
     visibility: visible;
     opacity: 1;
-    margin-top: -10px;
+    margin-bottom: 0px;
     transition-delay: 0.3s;
 }
 
@@ -199,4 +204,25 @@ h2 {
 
 .black {
     color: #000000;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 60%;
+    }
+
+    to {
+        opcacity: 1;
+        scale: 100%;
+    }
+}
+
+.animacion {
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
 }
