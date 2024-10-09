@@ -206,6 +206,60 @@ h2 {
     color: #000000;
 }
 
+#sobre-mi {
+    height: auto;
+    width: 100%;
+
+}
+
+.sobre-mi-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "formacion ."
+        ". experiencia"
+        "educacion ."
+        ". idiomas"
+        "competencias ."
+    ;
+}
+
+.sobre-mi-container>*>h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.formacion-container {
+    grid-area: formacion;
+    width: 90%;
+    margin: auto;
+}
+
+.experiencia-container {
+    grid-area: experiencia;
+    width: 90%;
+    margin: auto;
+}
+
+.educacion-container {
+    grid-area: educacion;
+    width: 90%;
+    margin: auto;
+}
+
+.idiomas-container {
+    grid-area: idiomas;
+    width: 90%;
+    margin: auto;
+}
+
+.competencias-digitales-container {
+    grid-area: competencias;
+    width: 90%;
+    margin: auto;
+}
+
 
 @keyframes show {
     from {
@@ -219,10 +273,12 @@ h2 {
     }
 }
 
+
+
 .animacion {
     view-timeline-name: --reveal;
     animation-name: show;
     animation-fill-mode: both;
     animation-timeline: --reveal;
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 20% cover 30%;
 }
