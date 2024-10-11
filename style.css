@@ -206,10 +206,13 @@ h2 {
     color: #000000;
 }
 
+.fuente-gruesa {
+    font-weight: 500;
+}
+
 #sobre-mi {
     height: auto;
     width: 100%;
-
 }
 
 .sobre-mi-container {
@@ -217,7 +220,7 @@ h2 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "formacion ."
+        "formacion imagen-pc"
         ". experiencia"
         "educacion ."
         ". idiomas"
@@ -228,6 +231,10 @@ h2 {
 .sobre-mi-container>*>h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
+}
+
+.containers-sobre-mi {
+    border: 1px solid black;
 }
 
 .formacion-container {
@@ -259,6 +266,29 @@ h2 {
     width: 90%;
     margin: auto;
 }
+
+.imagen-pc-container {
+    grid-area: imagen-pc;
+}
+
+.imagen-phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-phone {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-phone-container>* {
+    width: 50%;
+    height: 50%;
+}
+
+
+
 
 
 @keyframes show {
