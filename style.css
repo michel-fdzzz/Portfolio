@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -275,11 +276,81 @@ ul {
 .footer {
     background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 70%, rgb(66, 66, 66) 85%, rgba(255, 255, 255, 1) 100%);
     color: white;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
 }
 
 .container-content-footer {
     display: flex;
-    padding: 2em;
+    justify-content: space-between;
+    gap: 10vh;
+    width: 90%;
+
+}
+
+.container-social>h3 {
+    margin-bottom: 10px;
+}
+
+.lista-social {
+    display: flex;
+    list-style-type: none;
+}
+
+.lista-social li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+    margin-right: 50px;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.lista-social li a::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transform-origin: 100% 100%;
+    background-color: var(--clr);
+    border-radius: 20%;
+    right: -5px;
+    z-index: -1;
+    transform: rotate(12deg);
+    transition: 0.3s;
+}
+
+.lista-social li a::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20%;
+    border: 3px solid var(--clr);
+    z-index: -1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.lista-social li a:hover::before {
+    transform: rotate(0deg);
 }
 
 @keyframes show {
