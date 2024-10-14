@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -169,7 +169,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact animacion" id="contacto">
 
         <div class="contact-container">
             <h2>Contacteme</h2>
@@ -188,9 +188,11 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="10" cols="1"></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit">
+                    <p>Enviar</p>
+                </button>
 
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                 <input type="hidden" name="_captcha" value="false">
@@ -213,20 +215,18 @@
                 <h3>Social</h3>
                 <ul class="lista-social">
                     <li style="--clr:#0A66C2">
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/michel-fernández-martín-096b49272" target="_blank"
+                            rel="noopener noreferrer">
                             <img src="images/linkedin.svg" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
                     <li style="--clr:#FFFFFF">
-                        <a href="#">
+                        <a href="https://github.com/michel-fdzzz" target="_blank" rel="noopener noreferrer">
                             <img src="images/git.svg" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
-                    <li style="--clr:#ec4c3e">
-                        <a href="#">
-                            <img src="images/email.svg" alt="linkedin" height="25px" width="25px">
-                        </a>
-                    </li>
+
+                    <!-- PONER UN MODAL QUE SE MUESTRE AL PULSAR AQUÍ Y QUE SALGA MI NUMERO DE TELEFONO-->
                     <li style="--clr:#3AD876">
                         <a href="#">
                             <img src="images/phone.svg" alt="linkedin" height="25px" width="25px">
