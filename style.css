@@ -88,7 +88,9 @@ header.abajo ul li a:hover {
     color: rgb(0, 195, 255);
 }
 
-.container-nombre-puesto {
+
+
+.container-texto-inicio {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -122,6 +124,7 @@ h2 {
     text-align: center;
 }
 
+/* --- PROYECTOS --- */
 .title {
     margin: 1em;
 }
@@ -212,6 +215,9 @@ h2 {
     font-weight: 500;
 }
 
+
+/* --- SOBRE MI --- */
+
 #sobre-mi {
     height: auto;
     width: 100%;
@@ -222,7 +228,7 @@ h2 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "formacion ."
+        "situacion-actual ."
         ". experiencia"
         "educacion ."
         ". idiomas"
@@ -230,19 +236,28 @@ h2 {
     ;
 }
 
-.sobre-mi-container>*>h3 {
+.sobre-mi-container h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
+}
+
+.sobre-mi-container h4 {
+    margin-bottom: 0.5em;
+    color: rgb(90, 90, 90);
 }
 
 .containers-sobre-mi {
     border: 1px solid black;
 }
 
-.formacion-container {
-    grid-area: formacion;
+.situacion-actual-container {
+    grid-area: situacion-actual;
     width: 90%;
     margin: auto;
+}
+
+.contenido-situacion-actual {
+    margin: 2em;
 }
 
 .experiencia-container {
@@ -251,16 +266,30 @@ h2 {
     margin: auto;
 }
 
+.contenido-experiencia {
+    margin: 2em;
+}
+
 .educacion-container {
     grid-area: educacion;
     width: 90%;
     margin: auto;
 }
 
+
+.contenido-educacion {
+    margin: 2em;
+}
+
+
 .idiomas-container {
     grid-area: idiomas;
     width: 90%;
     margin: auto;
+}
+
+.contenido-idiomas {
+    margin: 2em;
 }
 
 .competencias-digitales-container {
@@ -269,10 +298,105 @@ h2 {
     margin: auto;
 }
 
+
+.contenido-competencias-digitales {
+    margin: 2em;
+}
+
+
 ul {
     list-style-type: none;
 }
 
+.cuadro {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {}
+
+
+/*  CONTACTO   */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: 4em auto;
+}
+
+.contact-container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 600px;
+    margin: auto 2em;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 94%;
+    border-radius: 4px;
+    padding: 1em;
+    border: 2px solid black;
+    transition: 0.5s;
+    background-color: #f7f7f7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px solid #0056B3;
+    border-radius: 8px;
+}
+
+
+input:focus,
+textarea:focus {
+    border: 2px solid #0056B3;
+    border-radius: 8px;
+}
+
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button>p {
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+
+/* FOOTER */
 .footer {
     background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 70%, rgb(66, 66, 66) 85%, rgba(255, 255, 255, 1) 100%);
     color: white;
@@ -353,81 +477,6 @@ ul {
     transform: rotate(0deg);
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    margin: 2em auto;
-}
-
-.contact-container {
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    width: 600px;
-    margin: auto 2em;
-}
-
-
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: 500;
-}
-
-input,
-textarea {
-    width: 94%;
-    border-radius: 4px;
-    padding: 1em;
-    border: 2px solid black;
-    transition: 0.5s;
-    background-color: #f7f7f7;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-}
-
-input:hover,
-textarea:hover {
-    border: 2px solid #0056B3;
-    border-radius: 8px;
-}
-
-
-input:focus,
-textarea:focus {
-    border: 2px solid #0056B3;
-    border-radius: 8px;
-}
-
-
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    /* Azul */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-button>p {
-    font-weight: 500;
-}
-
-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
 
 
 @keyframes show {
