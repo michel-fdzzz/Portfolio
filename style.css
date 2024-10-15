@@ -224,7 +224,7 @@ h2 {
 }
 
 .sobre-mi-container {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -233,7 +233,13 @@ h2 {
         "educacion ."
         ". idiomas"
         "competencias ."
-    ;
+    ;*/
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    /*align-items: flex-start;*/
+    justify-content: center;
 }
 
 .sobre-mi-container h3 {
@@ -252,8 +258,9 @@ h2 {
 
 .situacion-actual-container {
     grid-area: situacion-actual;
-    width: 90%;
-    margin: auto;
+    width: 35em;
+    margin: 0 1em;
+    /*margin: auto;*/
 }
 
 .contenido-situacion-actual {
@@ -262,8 +269,9 @@ h2 {
 
 .experiencia-container {
     grid-area: experiencia;
-    width: 90%;
-    margin: auto;
+    width: 35em;
+    margin: 0 1em;
+    /*margin: auto;*/
 }
 
 .contenido-experiencia {
@@ -272,8 +280,9 @@ h2 {
 
 .educacion-container {
     grid-area: educacion;
-    width: 90%;
-    margin: auto;
+    width: 35em;
+    margin: 0 1em;
+    /*margin: auto;*/
 }
 
 
@@ -284,8 +293,9 @@ h2 {
 
 .idiomas-container {
     grid-area: idiomas;
-    width: 90%;
-    margin: auto;
+    width: 35em;
+    margin: 0 1em;
+    /* margin: auto;*/
 }
 
 .contenido-idiomas {
@@ -294,8 +304,9 @@ h2 {
 
 .competencias-digitales-container {
     grid-area: competencias;
-    width: 90%;
-    margin: auto;
+    width: 35em;
+    margin: 0 1em;
+    /* margin: auto;*/
 }
 
 
@@ -313,7 +324,27 @@ ul {
     border-radius: 8px;
 }
 
+.contenedor-contenedores-gris {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.contenedor-gris {
+    background-color: rgba(117, 117, 117, 0.3);
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contenedor-gris:hover {
+    transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {}
+
+
+
 
 
 /*  CONTACTO   */
@@ -333,6 +364,10 @@ ul {
     margin: auto 2em;
 }
 
+.contact-container>h2 {
+    font-size: 1.5rem;
+    margin: 1em auto;
+}
 
 
 .form-group {
@@ -360,21 +395,26 @@ textarea {
 
 input:hover,
 textarea:hover {
-    border: 2px solid #0056B3;
-    border-radius: 8px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
 }
 
 
 input:focus,
 textarea:focus {
-    border: 2px solid #0056B3;
-    border-radius: 8px;
+    outline: none;
+    /* Elimina el estilo de outline predeterminado del navegador */
+    border: 2px solid #007BFF;
+    border-radius: 10px;
 }
 
-
+.contenedor-button {
+    display: flex;
+    justify-content: center;
+}
 
 button {
-    width: 100%;
+    width: 180px;
     padding: 10px;
     background-color: #007BFF;
     /* Azul */
