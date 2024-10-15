@@ -75,7 +75,13 @@ header ul li a {
     align-items: center;
     height: 100vh;
     text-align: center;
+    transition: 0.3s;
+}
 
+@media (max-width: 370px) {
+    .inicio {
+        margin-top: 103px;
+    }
 }
 
 header.abajo .logo,
@@ -132,7 +138,6 @@ h2 {
 .proyectos-container {
     height: 100vh;
     display: flex;
-
 }
 
 .proyecto-container-izq {
@@ -169,6 +174,12 @@ h2 {
 
 .proyecto:hover {
     height: -1px;
+}
+
+.container-numero-nombre-proyecto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .numero-proyecto {
@@ -215,6 +226,38 @@ h2 {
     font-weight: 500;
 }
 
+@media (max-width:670px) {
+    .proyectos-container {
+        flex-direction: column;
+        height: 115vh;
+    }
+
+    .proyecto {
+        width: 90%;
+        flex-wrap: unset;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+    }
+
+
+    .proyecto-container-der,
+    .proyecto-container-izq {
+        width: 100%;
+    }
+
+    .nombre-proyecto,
+    .numero-proyecto {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+
+    .informacion-proyecto {
+        height: auto;
+    }
+
+
+}
 
 /* --- SOBRE MI --- */
 
@@ -259,7 +302,7 @@ h2 {
 .situacion-actual-container {
     grid-area: situacion-actual;
     width: 35em;
-    margin: 0 1em;
+    margin: 0 2em;
     /*margin: auto;*/
 }
 
@@ -270,7 +313,7 @@ h2 {
 .experiencia-container {
     grid-area: experiencia;
     width: 35em;
-    margin: 0 1em;
+    margin: 0 2em;
     /*margin: auto;*/
 }
 
@@ -281,7 +324,7 @@ h2 {
 .educacion-container {
     grid-area: educacion;
     width: 35em;
-    margin: 0 1em;
+    margin: 0 2em;
     /*margin: auto;*/
 }
 
@@ -294,7 +337,7 @@ h2 {
 .idiomas-container {
     grid-area: idiomas;
     width: 35em;
-    margin: 0 1em;
+    margin: 0 2em;
     /* margin: auto;*/
 }
 
@@ -305,7 +348,7 @@ h2 {
 .competencias-digitales-container {
     grid-area: competencias;
     width: 35em;
-    margin: 0 1em;
+    margin: 0 2em;
     /* margin: auto;*/
 }
 
@@ -360,7 +403,7 @@ ul {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    width: 600px;
+    width: 700px;
     margin: auto 2em;
 }
 
