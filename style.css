@@ -14,6 +14,7 @@ html {
 
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -135,45 +136,41 @@ h2 {
     margin: 1em;
 }
 
+.proyectos {
+    width: 100%;
+
+}
+
 .proyectos-container {
-    height: 100vh;
     display: flex;
-}
-
-.proyecto-container-izq {
-    display: flex;
+    gap: 5%;
     justify-content: center;
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(66, 66, 66) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 70%, rgb(66, 66, 66) 85%, rgba(255, 255, 255, 1) 100%);
-    width: 50%;
-    height: 100%;
-    opacity: 0.8;
-}
+    background-image: url('images/fondoJS.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.proyecto-container-der {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(245, 245, 245) 15%, rgb(240, 240, 240) 30%, rgba(233, 233, 233, 0.9) 50%, rgba(240, 240, 240, 240) 70%, rgb(245, 245, 245) 85%, rgba(255, 255, 255, 1) 100%);
-    width: 50%;
-    height: 100%;
-    opacity: 0.8;
 }
-
 
 .proyecto {
-    position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    color: white;
-    width: 70%;
-    height: 100%;
+    /*justify-content: center;*/
+    color: rgb(0, 0, 0);
+    width: 500px;
     flex-wrap: wrap;
-    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin: 4em 2%;
+    background-color: white;
 }
 
-.proyecto:hover {
-    height: -1px;
+.proyecto-contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    height: 100%;
 }
 
 .container-numero-nombre-proyecto {
@@ -183,11 +180,9 @@ h2 {
 }
 
 .numero-proyecto {
-    margin-bottom: 0.5em;
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-size: 3rem;
-    color: rgb(223, 223, 223);
 }
 
 .nombre-proyecto {
@@ -196,26 +191,43 @@ h2 {
 }
 
 .informacion-proyecto {
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    color: rgb(223, 223, 223);
-    height: 0px;
-}
+    color: rgb(78, 78, 78);
 
-.proyecto:hover>.informacion-proyecto {
-    visibility: visible;
-    opacity: 1;
-    margin-bottom: 0px;
-    transition-delay: 0.3s;
 }
 
 .descripcion {
     font-weight: 500;
 }
 
+.container-link {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: auto;
+    /* Empuja el contenedor hacia abajo */
+    margin-bottom: 0;
+    width: 100%;
+}
+
 .link {
-    text-align: right;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.link-button {
+    background-color: rgba(117, 117, 117, 0.3);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.link-button:hover {
+    transform: translateY(-2px);
 }
 
 .black {
@@ -229,7 +241,8 @@ h2 {
 @media (max-width:670px) {
     .proyectos-container {
         flex-direction: column;
-        height: 115vh;
+        height: 100vh;
+        align-items: center;
     }
 
     .proyecto {
@@ -238,12 +251,11 @@ h2 {
         flex-direction: row;
         align-items: center;
         gap: 5%;
+        margin: 2%;
     }
 
-
-    .proyecto-container-der,
-    .proyecto-container-izq {
-        width: 100%;
+    .proyecto-contenido {
+        height: auto;
     }
 
     .nombre-proyecto,
