@@ -410,6 +410,13 @@ ul {
     margin: 4em auto;
 }
 
+#contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .contact-container {
     background: rgb(255, 255, 255);
     padding: 20px;
@@ -438,9 +445,9 @@ label {
 
 input,
 textarea {
-    width: 94%;
+    width: 100%;
     border-radius: 4px;
-    padding: 1em;
+    padding: 1em 0em 1em 5px;
     border: 2px solid black;
     transition: 0.5s;
     background-color: #f7f7f7;
@@ -594,4 +601,11 @@ button:hover {
     animation-fill-mode: both;
     animation-timeline: --reveal;
     animation-range: entry 20% cover 30%;
+}
+
+.my-custom-button {
+    background-color: #0079FC;
+    color: white;
+    border: #0079FC;
+    transition: 0.3s;
 }

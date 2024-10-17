@@ -17,6 +17,13 @@ form.addEventListener("submit", function (event) {
             emailForm.value = '';
             subjectForm.value = '';
             messageForm.value = '';
+            Swal.fire({
+                title: "Correo enviado!",
+                text: "Le responderé lo antes posible!",
+                icon: "success", customClass: {
+                    confirmButton: 'my-custom-button'
+                }
+            });
         }, 100)
     } else {
         event.preventDefault();
