@@ -279,31 +279,38 @@ h2 {
 }
 
 .sobre-mi-container {
-    /*display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "situacion-actual ."
-        ". experiencia"
-        "educacion ."
-        ". idiomas"
-        "competencias ."
-    ;*/
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    /*align-items: flex-start;*/
-    justify-content: center;
+        "experiencia ."
+        "experiencia ."
+        "experiencia .";
+    align-items: center;
+    justify-items: center;
 }
 
+@media (max-width: 1410px) {
+    .sobre-mi-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+}
+
+
 .sobre-mi-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5em;
 }
 
 .sobre-mi-container h4 {
     margin-bottom: 0.5em;
+    font-size: 1.25rem;
+}
+
+.gris {
     color: rgb(90, 90, 90);
 }
 
@@ -312,8 +319,7 @@ h2 {
 }
 
 .situacion-actual-container {
-    grid-area: situacion-actual;
-    width: 35em;
+    width: 40em;
     margin: 0 2em;
     /*margin: auto;*/
 }
@@ -324,7 +330,7 @@ h2 {
 
 .experiencia-container {
     grid-area: experiencia;
-    width: 35em;
+    width: 40em;
     margin: 0 2em;
     /*margin: auto;*/
 }
@@ -333,9 +339,20 @@ h2 {
     margin: 2em;
 }
 
+.contenedor-info-experiencia>ul {
+    list-style-type: disc;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .educacion-container {
-    grid-area: educacion;
-    width: 35em;
+    width: 40em;
     margin: 0 2em;
     /*margin: auto;*/
 }
@@ -345,10 +362,17 @@ h2 {
     margin: 2em;
 }
 
+.lista-educacion {
+    list-style-type: disc;
+
+}
+
+.margen-izq-listas-sobre-mi {
+    margin-left: 1.5em;
+}
 
 .idiomas-container {
-    grid-area: idiomas;
-    width: 35em;
+    width: 40em;
     margin: 0 2em;
     /* margin: auto;*/
 }
@@ -358,8 +382,7 @@ h2 {
 }
 
 .competencias-digitales-container {
-    grid-area: competencias;
-    width: 35em;
+    width: 40em;
     margin: 0 2em;
     /* margin: auto;*/
 }
@@ -419,7 +442,7 @@ ul {
 
 .contact-container {
     background: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 20px 26px 20px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     width: 700px;
@@ -446,7 +469,7 @@ label {
 input,
 textarea {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 1em 0em 1em 5px;
     border: 2px solid black;
     transition: 0.5s;
@@ -458,7 +481,7 @@ textarea {
 input:hover,
 textarea:hover {
     border: 2px solid #007BFF;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 
@@ -467,7 +490,7 @@ textarea:focus {
     outline: none;
     /* Elimina el estilo de outline predeterminado del navegador */
     border: 2px solid #007BFF;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .contenedor-button {
@@ -600,7 +623,7 @@ button:hover {
     animation-name: show;
     animation-fill-mode: both;
     animation-timeline: --reveal;
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 10% cover 20%;
 }
 
 .my-custom-button {
