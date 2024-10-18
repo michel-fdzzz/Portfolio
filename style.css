@@ -238,38 +238,7 @@ h2 {
     font-weight: 500;
 }
 
-@media (max-width:670px) {
-    .proyectos-container {
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-    }
-
-    .proyecto {
-        width: 90%;
-        flex-wrap: unset;
-        flex-direction: row;
-        align-items: center;
-        gap: 5%;
-        margin: 2%;
-    }
-
-    .proyecto-contenido {
-        height: auto;
-    }
-
-    .nombre-proyecto,
-    .numero-proyecto {
-        margin-bottom: 0;
-        font-size: 2.5rem;
-    }
-
-    .informacion-proyecto {
-        height: auto;
-    }
-
-
-}
+@media (max-width:670px) {}
 
 /* --- SOBRE MI --- */
 
@@ -539,7 +508,7 @@ button:hover {
 .container-content-footer {
     display: flex;
     justify-content: space-between;
-    gap: 10vh;
+    gap: 10vw;
     width: 90%;
 
 }
