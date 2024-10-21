@@ -29,4 +29,17 @@ form.addEventListener("submit", function (event) {
         event.preventDefault();
         alert("Por favor, rellena todos los campos");
     }
-});                                                     
+});
+
+var nav = document.getElementById("nav");
+var abrir = document.getElementById("abrir");
+var cerrar = document.getElementById("cerrar");
+
+abrir.addEventListener("click", function () {
+    nav.classList.add("visible");
+})
+
+
+cerrar.addEventListener("click", function () {
+    nav.classList.remove("visible");
+})

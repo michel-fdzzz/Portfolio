@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <nav>
-            <ul>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -336,19 +340,19 @@
                     <li style="--clr:#0A66C2">
                         <a href="https://www.linkedin.com/in/michel-fernández-martín-096b49272" target="_blank"
                             rel="noopener noreferrer">
-                            <img src="images/linkedin.svg" alt="linkedin" height="25px" width="25px">
+                            <img src="images/linkedin.svg" class="img-social" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
                     <li style="--clr:#FFFFFF">
                         <a href="https://github.com/michel-fdzzz" target="_blank" rel="noopener noreferrer">
-                            <img src="images/git.svg" alt="linkedin" height="25px" width="25px">
+                            <img src="images/git.svg" class="img-social" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
 
                     <!-- PONER UN MODAL QUE SE MUESTRE AL PULSAR AQUÍ Y QUE SALGA MI NUMERO DE TELEFONO-->
                     <li style="--clr:#3AD876">
                         <a href="#">
-                            <img src="images/phone.svg" alt="linkedin" height="25px" width="25px">
+                            <img src="images/phone.svg" class="img-social" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
                 </ul>
