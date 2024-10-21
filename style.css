@@ -188,6 +188,7 @@ h2 {
 .nombre-proyecto {
     font-size: 3rem;
     margin-bottom: 0.5em;
+    font-weight: 500;
 }
 
 .informacion-proyecto {
