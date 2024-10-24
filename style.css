@@ -740,6 +740,5 @@ textarea:focus {
     background-color: #0079FC;
     color: white;
     border: #0079FC;
-
     transition: 0.3s;
 }
