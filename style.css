@@ -181,18 +181,20 @@ h2 {
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         justify-content: start;
         align-items: end;
-        /*transition: 0.3s ease-in-out;*/
+
     }
 
     .nav.visible {
         opacity: 1;
         visibility: visible;
+        transition: 0.3s ease-in-out;
     }
 
     .nav-list {
         flex-direction: column;
         align-items: end;
         line-height: 3;
+        transition: 0.3s ease-in-out;
     }
 
     .nav-list li a {
@@ -460,9 +462,6 @@ ul {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {}
-
-
 
 
 
@@ -564,13 +563,16 @@ textarea:focus {
 
 /* FOOTER */
 .footer {
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 70%, rgb(66, 66, 66) 85%, rgba(255, 255, 255, 1) 100%);
+    background: black;
     color: white;
-    height: 250px;
+    height: 16em;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+    transition: 0.3s;
 }
 
 
@@ -578,12 +580,13 @@ textarea:focus {
     font-size: 1.5rem;
 }
 
-.container-content-footer {
+.container-content-footer-up {
     display: flex;
     justify-content: space-between;
     gap: 10vw;
     width: 90%;
-    align-items: center;
+    align-items: start;
+    margin-top: 1em;
 }
 
 .container-social {
@@ -656,6 +659,29 @@ textarea:focus {
     transition: 0.3s;
 }
 
+.container-content-footer-down {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.separador-cont-footer {
+    width: 90%;
+    margin: 1em;
+}
+
+.link-madeBy {
+    color: white;
+}
+
+@media (max-width: 679px) {
+    .footer {
+        height: 19em;
+    }
+}
 
 @media (max-width: 420px) {
     .lista-social li a {
@@ -680,7 +706,12 @@ textarea:focus {
         width: 22px !important;
         height: 22px !important;
     }
+}
 
+@media (max-height: 700px) and (min-height: 360px) {
+    .inicio {
+        margin-top: 103px;
+    }
 }
 
 @keyframes show {
