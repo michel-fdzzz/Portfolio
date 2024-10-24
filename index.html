@@ -294,10 +294,6 @@
             <h2>Envieme un correo</h2>
             <form id="contact-form" method="POST" action="https://formsubmit.co/1dba9ff2ce34711cd7d65649a3aa735a">
                 <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email">
                 </div>
@@ -328,8 +324,8 @@
 
 
     <!--https://www.rammaheshwari.com/-->
-    <section class="footer">
-        <div class="container-content-footer">
+    <section class="footer" id="footer">
+        <div class="container-content-footer-up">
             <div class="container-info">
                 <h3>MICHEL FERNÁNDEZ MARTÍN</h3>
                 <p>Desarrollador web junior</p>
@@ -351,13 +347,20 @@
 
                     <!-- PONER UN MODAL QUE SE MUESTRE AL PULSAR AQUÍ Y QUE SALGA MI NUMERO DE TELEFONO-->
                     <li style="--clr:#3AD876">
-                        <a href="#">
+                        <a href="#footer" class="link-numero">
                             <img src="images/phone.svg" class="img-social" alt="linkedin" height="25px" width="25px">
                         </a>
                     </li>
                 </ul>
 
             </div>
+        </div>
+
+
+
+        <div class="container-content-footer-down">
+            <hr class="separador-cont-footer">
+            <p>Made by <a href="#" class="link-madeBy">Michel Fernández</a></p>
         </div>
     </section>
 
