@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Michel Fernández</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -113,7 +114,8 @@
 
                     </div>
                     <div class="container-link">
-                        <a href="https://github.com/michel-fdzzz/Proyecto" target="_blank" class="link">
+                        <a href="https://github.com/michel-fdzzz/Proyecto/tree/main/PROYECTO" target="_blank"
+                            class="link">
                             <div class="link-button">
                                 <p>Ver proyecto</p>
                             </div>
@@ -189,20 +191,6 @@
                                 Github para facilitar la colaboración y la comunicación entre los miembros del equipo.
                             </li>
                         </ul>
-                        <!--Desarrollo de una web para la empresa, tanto en el backend como en el
-                        frontend.<br>
-
-                        Respecto al frontend, diseñé la interfaz responsive y añadí funcionalidades interactivas con
-                        HTML,
-                        CSS,
-                        JavaScript y jQuery.<br>
-
-                        En el backend, usé PHP y MySQL para gestionar la lógica del servidor y la base de datos,
-                        aportando
-                        seguridad y un buen funcionamiento de la web. Ambas partes fueron integradas y comprobadas,
-                        garantizando
-                        su funcionamiento.-->
-
                     </div>
                 </div>
             </div>
@@ -362,7 +350,125 @@
 
 
 
-    <script src="JS/script.js"></script>
+
+    <div id="particles-js"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+                "particles": {
+                    "number": {
+                        "value": 70,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#000000"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 4.008530152163807,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 0,
+                            "size_min": 0,
+                            "sync": true
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 100,
+                        "color": "#000000",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        )
+    </script>
 </body>
 
 </html>
