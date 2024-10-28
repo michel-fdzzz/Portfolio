@@ -50,7 +50,6 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-
 document.querySelector('.link-numero').addEventListener('click', () => {
     Swal.fire({
         text: "+34 685 82 76 50",
