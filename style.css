@@ -576,7 +576,7 @@ textarea:focus {
 .footer {
     background: black;
     color: white;
-    height: 16em;
+    height: 14em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -716,6 +716,16 @@ textarea:focus {
     .img-social {
         width: 22px !important;
         height: 22px !important;
+    }
+
+    .footer {
+        height: 17em
+    }
+}
+
+@media (max-width: 387px) {
+    .footer {
+        height: 20em;
     }
 }
 
