@@ -318,7 +318,11 @@ h2 {
     font-weight: 500;
 }
 
-@media (max-width:670px) {}
+@media (max-width:670px) {
+    .proyecto {
+        margin: 2em 2em;
+    }
+}
 
 /* --- SOBRE MI --- */
 
