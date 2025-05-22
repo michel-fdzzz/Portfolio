@@ -30,8 +30,9 @@
             <p class="puesto">
                 Soy un desarrollador web junior proactivo, extrovertido, con ganas
                 de trabajar, ya sea de manera individual o en equipo, y siempre con ganas de aprender y mejorar.
-                <br>Actualmente me encuentro realizando un curso de Angular y Spring Boot aunque este octubre comenzaré
-                un curso de IA.
+                <br>Actualmente me encuentro realizando un curso de Python para reforzar mis conocimientos en el
+                lenguaje y seguir progresando
+                en el mundo de la inteligencia artificial y desarrollo, ya sea en el backend o en el frontend.
             </p>
         </div>
     </section>
@@ -169,18 +170,92 @@
         </div>
     </section>
 
+
+
     <!--https://www.rammaheshwari.com/-->
     <section class="footer">
         <div class="container-content-footer">
             <div class="container-info">
-                <h3>MICHEL FERNÁNDEZ</h3>
-                <p>AEFNWOI</p>
+                <h3>MICHEL FERNÁNDEZ MARTÍN</h3>
+                <p>Desarrollador web junior</p>
             </div>
             <div class="container-social">
+                <h3>Social</h3>
+                <ul class="lista-social">
+                    <li style="--clr:#0A66C2">
+                        <a href="#">
+                            <img src="images/linkedin.svg" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+                    <li style="--clr:#FFFFFF">
+                        <a href="#">
+                            <img src="images/git.svg" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+                    <li style="--clr:#ec4c3e">
+                        <a href="#">
+                            <img src="images/email.svg" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+                    <li style="--clr:#3AD876">
+                        <a href="#">
+                            <img src="images/phone.svg" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </section>
 
+
+    <!-- Poner para un correo-->
+    <div class="contact-container">
+        <h2>Enviar Correo</h2>
+        <form id="contact-form" method="POST" action="send_email.php">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="response"></div> <!-- Para mostrar mensajes de respuesta -->
+    </div>
+
+    <script>
+        // Manejar el envío del formulario sin recargar la página
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitar el envío normal del formulario
+
+            const formData = new FormData(form);
+
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('response').innerHTML = data; // Mostrar la respuesta
+                    form.reset(); // Resetear el formulario
+                })
+                .catch(error => {
+                    document.getElementById('response').innerHTML = 'Error al enviar el correo.';
+                });
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
