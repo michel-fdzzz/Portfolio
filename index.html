@@ -3,26 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Michel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </head>
 
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section class="inicio">
-        <div class="container-nombre-puesto">
+        <div class="container-texto-inicio">
             <p class="lighter">Michel Fernández</p>
             <hr>
             <p class="lighter">Desarrollador web junior</p>
@@ -30,151 +36,337 @@
             <p class="puesto">
                 Soy un desarrollador web junior proactivo, extrovertido, con ganas
                 de trabajar, ya sea de manera individual o en equipo, y siempre con ganas de aprender y mejorar.
+<<<<<<< HEAD
                 <br>Actualmente me encuentro realizando un curso de Python para reforzar mis conocimientos en el
                 lenguaje y seguir progresando
                 en el mundo de la inteligencia artificial y desarrollo, ya sea en el backend o en el frontend.
+=======
+                <br>Actualmente me encuentro realizando un curso de Angular y Spring Boot y otro de IA.
+                Profesionalmente me gustaría enfocar mi carrera al mundo de la Inteligencia Artificial, mundo en el que
+                me estoy formando.
+>>>>>>> b8349f26eb25e2a994f238403cafd8ec8c4989c6
             </p>
         </div>
     </section>
 
-    <section class="proyectos animacion">
-        <h2 class="title">Proyectos</h2>
-        <div class="proyectos-container " id="proyectos">
-            <div class="proyecto-container-izq">
-                <div class="proyecto">
-                    <h2 class="numero-proyecto">01</h2>
-                    <h3 class="nombre-proyecto">Buscaminas</h3>
+    <section class="proyectos" id="proyectos">
+        <h2 class="title animacion">Proyectos</h2>
+        <div class="proyectos-container ">
+
+            <div class="proyecto animacion">
+                <div class="proyecto-contenido">
+                    <div class="container-numero-nombre-proyecto">
+                        <h2 class="numero-proyecto">01</h2>
+                        <h3 class="nombre-proyecto">Buscaminas</h3>
+                    </div>
                     <div class="informacion-proyecto">
                         <p class="descripcion">
-                            El jugador debe descubrir todas las celdas que no contienen minas en un tablero de tamaño
-                            variable. Cada celda puede ocultar una mina o mostrar un número que indica cuántas minas hay
-                            en
-                            las celdas adyacentes. El objetivo es destapar todas las celdas seguras y marcar
-                            correctamente
-                            las minas. Si el jugador destapa una mina, la partida termina.
+                            El objetivo del Buscaminas es descubrir todas las celdas seguras en un tablero sin destapar
+                            ninguna mina. Cada celda puede ocultar una mina o mostrar un número que indica cuántas minas
+                            hay en las celdas adyacentes. El jugador debe usar estos números para deducir dónde están
+                            las minas, marcarlas con banderas y seguir descubriendo celdas seguras. Si destapa una mina,
+                            el juego termina. Gana quien descubre todas las celdas seguras sin errores.
                         </p>
-                        <div class="link">link</div>
+
+                    </div>
+                    <div class="container-link">
+                        <a href="https://buscaminas-alpha.vercel.app/" target="_blank" class="link">
+                            <div class="link-button">
+                                <p>Ver proyecto</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto animacion">
+                <div class="proyecto-contenido">
+                    <div class="container-numero-nombre-proyecto">
+                        <h2 class="numero-proyecto">02</h2>
+                        <h3 class="nombre-proyecto">Tres en raya</h3>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <p class="descripcion">
+                            Este juego es una versión del clásico 3 en raya con dos modalidades: de 6 y 9 fichas. En el
+                            modo de 6 fichas, cada jugador tiene 3; si colocan las tres fichas sin hacer una línea,
+                            pueden mover una de sus fichas para intentar ganar. En el modo de 9 fichas, el juego es el
+                            tradicional: cuando se llenan las casillas, el juego termina. Además, ofrece tres modos de
+                            juego: 'jugador vs aleatorio', 'jugador vs IA' y '2 jugadores', permitiendo diferentes
+                            formas de competir.
+                        </p>
+                    </div>
+                    <div class="container-link">
+                        <a href="https://3-en-raya-zeta.vercel.app/" target="_blank" class="link">
+                            <div class="link-button">
+                                <p>Ver proyecto</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto animacion">
+                <div class="proyecto-contenido">
+                    <div class="container-numero-nombre-proyecto">
+                        <h2 class="numero-proyecto">03</h2>
+                        <h3 class="nombre-proyecto">Tienda online</h3>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <p class="descripcion">
+                            Esta es una tienda de relojes online que incluye las funcionalidades generales de cualquier
+                            e-commerce. Desarrollada con HTML, CSS, JavaScript, jQuery y PHP, permite realizar
+                            operaciones CRUD para gestionar productos y conectarse con su base de datos. Incluye un
+                            sistema de administración, donde los roles deben ser asignados manualmente desde la base de
+                            datos. El sitio ofrece una experiencia completa de compra, incluyendo gestión de usuarios,
+                            carrito, y un buscador optimizado para filtrar productos por marca o nombre.
+                        </p>
+
+                    </div>
+                    <div class="container-link">
+                        <a href="https://github.com/michel-fdzzz/Proyecto/tree/main/PROYECTO" target="_blank"
+                            class="link">
+                            <div class="link-button">
+                                <p>Ver proyecto</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
 
-            <div class="proyecto-container-der">
-                <div class="proyecto">
-                    <h2 class="numero-proyecto black">02</h2>
-                    <h3 class="nombre-proyecto black">3 en rayas</h3>
-                    <div class="informacion-proyecto black">
-                        <p class="descripcion black ">
-                            Básicamente es el juego del 3 en raya con diferentes modalidades de juego ya sea jugando con
-                            6 fichas o con 9.
-                            <br>En el modo de 6 fichas, cada jugador tiene 3, si el jugador pone sus tres
-                            fichas y ninguno a hecho 3 en raya puede quitar una ficha que tenga puesto y cambiarla de
-                            lugar.
-                            </br>El modo de 9 fichas es el que todos conocemos, cuando se llenen todas las casillas
-                            se acaba el juego.
-                            </br>Luego tenemos los modos 'jugador vs aleatorio', 'jugador vs IA' y '2
-                            jugadores'.
+            <div class="proyecto animacion">
+                <div class="proyecto-contenido">
+                    <div class="container-numero-nombre-proyecto">
+                        <h2 class="numero-proyecto">04</h2>
+                        <h3 class="nombre-proyecto">Modelo predictivo</h3>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <p class="descripcion">
+                            Un modelo de machine learning diseñado para predecir si una persona tiene diabetes analiza
+                            datos médicos relevantes y aprende a identificar patrones asociados con esta condición. El
+                            modelo utiliza algoritmos avanzados de aprendizaje supervisado, como Random Forest,
+                            K-Nearest Neighbors (KNN) y árboles de decisión, para evaluar con que entrenamiento podemos
+                            sacar mejor rendimiento al modelo.
                         </p>
-                        <div class="link black">link</div>
+
+                    </div>
+                    <div class="container-link">
+                        <a href="https://github.com/michel-fdzzz/Modelo-predictivo-ML" target="_blank" class="link">
+                            <div class="link-button">
+                                <p>Ver proyecto</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </section>
 
-    <section id="sobre-mi" class="animacion">
-        <h2 class="title">Sobre mi</h2>
+    <section id="sobre-mi">
+        <h2 class="title animacion">Sobre mi</h2>
         <div class="sobre-mi-container">
-
-            <div class="formacion-container ">
-                <div class="contenido-formacion">
-                    <h3>Formación</h3>
-                    <p class="fuente-gruesa"> Terminé mis estudios de grado superior en Desarrollo de Aplicaciones Web
-                        en
-                        junio. Durante mis
-                        prácticas
-                        en Rentdays S.L., participé en el desarrollo de su página web junto con un compañero. Esta
-                        experiencia
-                        me permitió afianzar mis conocimientos tanto en el frontend como en el backend, fundamentales
-                        para
-                        un
-                        rol de desarrollador full stack. Además, trabajar en equipo me ayudó a compatibilizar tareas y a
-                        integrar los diferentes aspectos del proyecto de manera eficiente.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="experiencia-container ">
+            <div class="experiencia-container cuadro animacion">
                 <div class="contenido-experiencia">
                     <h3>Experiencia</h3>
-                    <h4>Desarrollador full stack en Restdays SL</h4>
-                    <p class="fuente-gruesa">Desarrollo de una web para la empresa, tanto en el backend como en el
-                        forntend.
-
-                        Respecto al frontend, diseñé la interfaz responsive y añadí funcionalidades interactivas con
-                        HTML,
-                        CSS,
-                        JavaScript y jQuery.
-
-                        En el backend, usé PHP y MySQL para gestionar la lógica del servidor y la base de datos,
-                        aportando
-                        seguridad y un buen funcionamiento de la web. Ambas partes fueron integradas y comprobadas,
-                        garantizando
-                        su funcionamiento.
-                    </p>
-                </div>
-            </div>
-
-            <div class="educacion-container ">
-                <div class="contenido-educacion">
-                    <h3>Educación</h3>
-                    <div class="fuente-gruesa">
-                        <ul>
+                    <h4 class="gris">Desarrollador full stack en Restdays SL</h4>
+                    <div class="fuente-gruesa  contenedor-info-experiencia">
+                        <p>Creación de una plataforma que actúa como intermediaria entre propietarios y clientes
+                            interesados en
+                            alquilar o comprar propiedades.</p>
+                        <br>
+                        <h5>Desarrollo del Back-end:</h5><br>
+                        <ul class="margen-izq-listas-sobre-mi">
                             <li>
-                                Curso de Angular y Spring Boot
+                                <span class="bold">Base de datos con MySQL:</span> Estructuración eficiente para
+                                almacenar y gestionar
+                                información.
                             </li>
                             <li>
-                                Grado Superior de desarrollo de apliaciones web (DAW)
+                                <span class="bold">Acceso mediante PHP y AJAX:</span> Interacción dinámica con la base
+                                de datos para manejar la
+                                lógica del servidor.
+                            </li>
+                            <li>
+                                <span class="bold">Operaciones CRUD:</span> Desarrollo de funciones para gestionar datos
+                                desde la web.
+                            </li>
+                            <li>
+                                <span class="bold"> Seguridad y rendimiento:</span> Implementación de medidas de
+                                seguridad en el manejo de los
+                                datos y optimización
+                                de procesos.
+                            </li>
+                        </ul>
+
+                        <br>
+                        <h5>Desarrollo del Front-End:</h5><br>
+                        <ul class="margen-izq-listas-sobre-mi">
+                            <li>
+                                <span class="bold">Interfaz responsive:</span> Diseño flexible para uso en múltiples
+                                dispositivos.
+                            </li>
+                            <li>
+                                <span class="bold">Funcionalidades interactivas:</span> Uso de HTML, CSS, JavaScript y
+                                jQuery para una
+                                experiencia
+                                enriquecida.
+                            </li>
+                            <li>
+                                <span class="bold">Experiencia del usuario:</span> Navegación fluida e intuitiva.
+                            </li>
+                        </ul>
+
+                        <br>
+                        <h5>Trabajo en equipo:</h5><br>
+                        <ul class="margen-izq-listas-sobre-mi">
+                            <li>
+                                <span class="bold">Colaboración y comunicación efectiva:</span> Uso de herramientas de
+                                comunicación como
+                                Github para facilitar la colaboración y la comunicación entre los miembros del equipo.
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="idiomas-container ">
-                <div class="contenido-idioma">
-                    <h3>Idiomas</h3>
-                    <ul class="fuente-gruesa">
-                        <li>Inglés</li>
-                        <li>Español</li>
-                    </ul>
+            <div class="educacion-container cuadro animacion">
+                <div class="contenido-educacion">
+                    <h3>Educación</h3>
+                    <div class="fuente-gruesa">
+                        <ul class="lista-educacion margen-izq-listas-sobre-mi">
+                            <li>
+                                Python -
+                                CEI: Centro de Estudios de Innovación, Marketing y Nuevas Tecnologías <span
+                                    class="gris">Abril 2025 –
+                                    Actualidad</span>
+                            </li>
+                            <br>
+                            <li>
+                                Curso de Inteligencia Artificial (IA): Fundamentos y Aplicaciones Prácticas -
+                                CEI: Centro de Estudios de Innovación, Marketing y Nuevas Tecnologías <span
+                                    class="gris">Octubre 2024 –
+                                    Enero 2025</span>
+                            </li>
+                            <br>
+                            <li>
+                                Grado Superior De Desarrollo De Aplicaciones Web - IES Matemático Puig Adam <span
+                                    class="gris">2022 – 2024</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="competencias-digitales-container ">
-                <div class="contenido-competencias">
+            <div class="idiomas-container cuadro animacion">
+                <div class="contenido-idiomas">
+                    <h3>Idiomas</h3>
+                    <div class="contenedor-contenedores-gris ">
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">Español Nativo</p>
+                        </div>
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">Inglés C1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competencias-digitales-container cuadro animacion">
+                <div class="contenido-competencias-digitales">
                     <h3>Competencias digitales</h3>
-                    <ul class="fuente-gruesa">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                    </ul>
+                    <div class="contenedor-contenedores-gris ">
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">HTML</p>
+                        </div>
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">CSS</p>
+                        </div>
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">JavaScript</p>
+                        </div>
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">PHP</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">jQuery</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">MySQL</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">AJAX</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">PhpMyAdmin</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">JSON</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">Python</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">Pandas</p>
+                        </div>
+
+                        <div class="contenedor-gris ">
+                            <p class="fuente-gruesa">Scikit-learn</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
 
 
     <!--https://www.rammaheshwari.com/-->
     <section class="footer">
         <div class="container-content-footer">
+=======
+    <section class="contact animacion" id="contacto">
+
+        <div class="contact-container">
+            <h2>Envieme un correo</h2>
+            <form id="contact-form" method="POST" action="https://formsubmit.co/1dba9ff2ce34711cd7d65649a3aa735a">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="10" cols="1"></textarea>
+                </div>
+
+                <div class="contenedor-button">
+                    <button type="submit" id="buttonEnviar">
+                        <p>Enviar</p>
+                    </button>
+                </div>
+
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="container-content-footer-up">
+>>>>>>> b8349f26eb25e2a994f238403cafd8ec8c4989c6
             <div class="container-info">
                 <h3>MICHEL FERNÁNDEZ MARTÍN</h3>
                 <p>Desarrollador web junior</p>
@@ -183,6 +375,7 @@
                 <h3>Social</h3>
                 <ul class="lista-social">
                     <li style="--clr:#0A66C2">
+<<<<<<< HEAD
                         <a href="#">
                             <img src="images/linkedin.svg" alt="linkedin" height="25px" width="25px">
                         </a>
@@ -200,15 +393,40 @@
                     <li style="--clr:#3AD876">
                         <a href="#">
                             <img src="images/phone.svg" alt="linkedin" height="25px" width="25px">
+=======
+                        <a href="https://www.linkedin.com/in/michel-fernández-martín-096b49272" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/linkedin.svg" class="img-social" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+                    <li style="--clr:#FFFFFF">
+                        <a href="https://github.com/michel-fdzzz" target="_blank" rel="noopener noreferrer">
+                            <img src="images/git.svg" class="img-social" alt="linkedin" height="25px" width="25px">
+                        </a>
+                    </li>
+
+                    <!-- PONER UN MODAL QUE SE MUESTRE AL PULSAR AQUÍ Y QUE SALGA MI NUMERO DE TELEFONO-->
+                    <li style="--clr:#3AD876">
+                        <a href="#footer" class="link-numero">
+                            <img src="images/phone.svg" class="img-social" alt="linkedin" height="25px" width="25px">
+>>>>>>> b8349f26eb25e2a994f238403cafd8ec8c4989c6
                         </a>
                     </li>
                 </ul>
 
             </div>
         </div>
+
+
+
+        <div class="container-content-footer-down">
+            <hr class="separador-cont-footer">
+            <p>Made by <a href="#" class="link-madeBy">Michel Fernández</a></p>
+        </div>
     </section>
 
 
+<<<<<<< HEAD
     <!-- Poner para un correo-->
     <div class="contact-container">
         <h2>Enviar Correo</h2>
@@ -258,6 +476,128 @@
     </script>
 
     <script src="script.js"></script>
+=======
+
+
+    <div id="particles-js"></div>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+                "particles": {
+                    "number": {
+                        "value": 70,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#000000"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 4.008530152163807,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 0,
+                            "size_min": 0,
+                            "sync": true
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 100,
+                        "color": "#000000",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        )
+    </script>
+>>>>>>> b8349f26eb25e2a994f238403cafd8ec8c4989c6
 </body>
 
 </html>
