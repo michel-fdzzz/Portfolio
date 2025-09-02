@@ -686,6 +686,14 @@ textarea:focus {
 
 .link-madeBy {
     color: white;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
 }
 
 @media (max-width: 679px) {
@@ -733,6 +741,8 @@ textarea:focus {
     .inicio {
         margin-top: 103px;
     }
+
+
 }
 
 @keyframes show {
